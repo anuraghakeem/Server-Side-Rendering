@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\p\\[id].js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -5741,21 +5741,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cindex.js!./":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cindex.js ***!
-  \**********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cp%5C%5Bid%5D.js!./":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cp%5C%5Bid%5D.js ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/p/[id]", function() {
+      var page = __webpack_require__(/*! ./pages/p/[id].js */ "./pages/p/[id].js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/p/[id].js */ "./pages/p/[id].js", function() {
+          if(!next.router.components["/p/[id]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/p/[id].js */ "./pages/p/[id].js")
+          next.router.update("/p/[id]", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10047,103 +10047,58 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/p/[id].js":
+/*!*************************!*\
+  !*** ./pages/p/[id].js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Post; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\anuhakee\\githubRepos\\Server-Side-Rendering\\hello-next\\pages\\index.js";
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/MyLayout.js */ "./components/MyLayout.js");
+var _jsxFileName = "C:\\Users\\anuhakee\\githubRepos\\Server-Side-Rendering\\hello-next\\pages\\p\\[id].js";
 
 
 
-
-var PostLink = function PostLink(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+function Post() {
+  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/p/[id]",
-    as: "/p/".concat(props.id),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, props.id)));
-};
-
-function Blog() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 9
     },
     __self: this
-  }, "My Blog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, router.query.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
-    id: "hello-nextjs",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
-    id: "learn-nextjs",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
-    id: "deploy-nextjs",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  })));
+  }, "This is the blog post content."));
 }
 
 /***/ }),
 
-/***/ 0:
-/*!**************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cindex.js ***!
-  \**************************************************************************************************************************************************************/
+/***/ 1:
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cp%5C%5Bid%5D.js ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cp%5C%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5Canuhakee%5CgithubRepos%5CServer-Side-Rendering%5Chello-next%5Cpages%5Cp%5C%5Bid%5D.js!./");
 
 
 /***/ }),
@@ -10159,5 +10114,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[1,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=[id].js.map
